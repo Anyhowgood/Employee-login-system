@@ -3,9 +3,12 @@
 
 #include <sqlite3.h>
 #include "head.h"
+#include <sys/types.h>
+#include <sys/socket.h>
 
-void db_create();
-void db_u_register(int fd,void *buf);
+#define CMD_SIZE 1024
+void db_create(sqlite3 *db);
+void db_u_register(int fd,void *buf,sqlite3 *db);
 void db_u_login(int fd,void *buf);
 void db_u_forget(int fd,void *buf);
 void db_u_exit(int fd,void *buf);
