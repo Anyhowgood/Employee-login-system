@@ -40,5 +40,14 @@ struct message{
 #define SEARCH   'S'
 #define LEXIT    'X'
 
+#define R_SUCCEE  "#"
+#define L_SUCCEE  "#"
+#define U_SUCCEE  "#"
+
+#define NAME_EXIST "A"
+//#define NAME_NOEXIST "B"
+#define NAME_OR_PASS_F "B"
+#define MES_F  "C"
+
 
 #endif //__HEAD_H
